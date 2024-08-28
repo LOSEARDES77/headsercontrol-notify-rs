@@ -12,6 +12,6 @@ Run the install.sh file
 ```bash
 ./install.sh
 ```
+---
 
-
-
+Rewritte of [headsetcontrol-notificationd](https://github.com/Manawyrm/headsetcontrol-notificationd)
