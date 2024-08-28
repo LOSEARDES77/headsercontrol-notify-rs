@@ -173,9 +173,9 @@ fn parse_device(device_str: &str) -> Option<Device> {
         }
     }
 
-    if device.name.is_empty() {
-        return None;
-    } else if device.battery_status == BatteryStatus::Disconnected && device.battery.is_none() {
+    if device.name.is_empty()
+        || device.battery_status == BatteryStatus::Disconnected && device.battery.is_none()
+    {
         return None;
     }
 
