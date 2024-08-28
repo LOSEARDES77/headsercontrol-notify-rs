@@ -1,0 +1,10 @@
+[Unit]
+Description=Headsetcontrol-Notificationd
+
+[Service]
+ExecStart=/home/USER_NAME/.cargo/bin/headsetcontrol-notify
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
